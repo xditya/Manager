@@ -20,13 +20,13 @@ from Manager.modules.helper_funcs.chat_status import is_user_admin
 from Manager.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I ama a GroupManagement bot with some basic and some custom features.
+Hello {}, my name is {}!
 
-You can find my list of available commands with /help.
+You know how hard it is sometimes to manage group so here is the solution for you.
 
-Based on [Saitama's Repo](github.com/AnimeKaizoku/Manager) 
+My owner is [Aditya 🇮🇳](t.me/xditya)
 
+Click /help or Help button below to find out more about how to use me to my full potential.
 """
 
 HELP_STRINGS = """
@@ -40,7 +40,8 @@ Group Management Bot with advanced features.
  - /settings:
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
-
+ 
+* This repo is based on [Saitama Bot](https://github.com/AnimeKaizoku/SaitamaRobot) and [GroupManager](https://GitHub.com/xditya/GroupManager).
 
 {}
 And the following:
