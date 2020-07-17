@@ -41,7 +41,7 @@ Group Management Bot with advanced features.
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
  
-Pls note that this repo is based on [Saitama Bot](https://github.com/AnimeKaizoku/SaitamaRobot) and [GroupManager](https://GitHub.com/xditya/GroupManager).
+Pls note that this repo is based on [Saitama Bot](https://github.com/AnimeKaizoku/SaitamaRobot) and [GroupManager](https://GitHub.com/xditya/GroupManager), link_preview = False.
 
 {}
 And the following:
