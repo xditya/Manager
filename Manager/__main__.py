@@ -20,13 +20,18 @@ from Manager.modules.helper_funcs.chat_status import is_user_admin
 from Manager.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hello {}, my name is {}!
+text = "Hey there {}, My name is Ironman - I'm here to help you manage your groups!\n\
+Click Help button to find out more about how to use me.\n\n"
 
-You know how hard it is sometimes to manage group so here is the solution for you.
+    text += "Join SUPPORT GROUP IF YOU NEED ANY HELP\n\n\
+THIS BOT IS HAVING MORE AND EXCLUSIVE FEATURES!\n\n\
+Made with love by RC TEAM\n\nSo what are you waiting for? Add me in your groups and give full right to make me function well"
 
-My owner is [Aditya 🇮🇳](t.me/xditya)
-
-Click /help or Help button below to find out more about how to use me to my full potential.
+    keyboard = [[InlineKeyboardButton(text="🆘️ Support Group🆘️", url="https://t.me/ironman_support"),
+        InlineKeyboardButton(text="💠Connect Group💠", callback_data="cntrl_panel_M")]]
+    keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
+        InlineKeyboardButton(text="❓Help", callback_data="help_back")]]
+    keyboard += [[InlineKeyboardButton(text="🔌 Add me",url="http://t.me/Ironman_pro_bot?startgroup=true")]]
 """
 
 HELP_STRINGS = """
@@ -46,7 +51,7 @@ Pls note that this repo is based on Saitama Bot and GroupManager Bot.
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
-DONATE_STRING = """Heya, glad to hear you want to donate! I'm not accepting any donations right now, still, if needed, drop a thanks to @xditya."""
+DONATE_STRING = """HEY I AM NOT TAKING ANY DONATIONS TILL NOW BUT IF WANT TO HELP THEN ADD THIS BOT IN MORE GROUPS."""
 
 IMPORTED = {}
 MIGRATEABLE = []
