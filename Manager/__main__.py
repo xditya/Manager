@@ -36,7 +36,7 @@ Made with love by RC TEAM\n\nSo what are you waiting for? Add me in your groups 
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-Group Management Bot with advanced features. 
+Group Manager Bot with advanced and exclusive features. 
 *Main* commands available:
  - /start: start the bot
  - /help: PM's you this message.
@@ -46,7 +46,7 @@ Group Management Bot with advanced features.
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
  
-Pls note that this repo is based on Saitama Bot and GroupManager Bot.
+*MADE WITH LOVE BY RC TEAM.*
 
 {}
 And the following:
