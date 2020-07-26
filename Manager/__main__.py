@@ -20,12 +20,14 @@ from Manager.modules.helper_funcs.chat_status import is_user_admin
 from Manager.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hey there {}, My name is Ironman - I'm here to help you manage your groups!\n\
-Click Help button to find out more about how to use me.\n\n"
+Hey there {}, My name is Ironman - I'm here to help you manage your groups!
+Click Help button to find out more about how to use me.
 
-Join SUPPORT GROUP IF YOU NEED ANY HELP\n\n\
-THIS BOT IS HAVING MORE AND EXCLUSIVE FEATURES!\n\n\
-Made with love by RC TEAM\n\nSo what are you waiting for? Add me in your groups and give full right to make me function well
+Join SUPPORT GROUP IF YOU NEED ANY HELP
+THIS BOT IS HAVING MORE AND EXCLUSIVE FEATURES!
+Made with love by RC TEAM
+
+So what are you waiting for? Add me in your groups and give full right to make me function well
 """
 
 HELP_STRINGS = """
