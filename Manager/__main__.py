@@ -23,15 +23,9 @@ PM_START_TEXT = """
 text = "Hey there {}, My name is Ironman - I'm here to help you manage your groups!\n\
 Click Help button to find out more about how to use me.\n\n"
 
-    text += "Join SUPPORT GROUP IF YOU NEED ANY HELP\n\n\
+Join SUPPORT GROUP IF YOU NEED ANY HELP\n\n\
 THIS BOT IS HAVING MORE AND EXCLUSIVE FEATURES!\n\n\
-Made with love by RC TEAM\n\nSo what are you waiting for? Add me in your groups and give full right to make me function well"
-
-    keyboard = [[InlineKeyboardButton(text="🆘️ Support Group🆘️", url="https://t.me/ironman_support"),
-        InlineKeyboardButton(text="💠Connect Group💠", callback_data="cntrl_panel_M")]]
-    keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
-        InlineKeyboardButton(text="❓Help", callback_data="help_back")]]
-    keyboard += [[InlineKeyboardButton(text="🔌 Add me",url="http://t.me/Ironman_pro_bot?startgroup=true")]]
+Made with love by RC TEAM\n\nSo what are you waiting for? Add me in your groups and give full right to make me function well
 """
 
 HELP_STRINGS = """
@@ -138,10 +132,18 @@ def start(bot: Bot, update: Update, args: List[str]):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            keyboard = [[InlineKeyboardButton(text="🆘️ Support Group🆘️", url="https://t.me/ironman_support"),
+                InlineKeyboardButton(text="💠Connect Group💠", callback_data="cntrl_panel_M")]]
+            keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
+                InlineKeyboardButton(text="❓Help", callback_data="help_back")]]
+            keyboard += [[InlineKeyboardButton(text="🔌 Add me",url="http://t.me/Ironman_pro_bot?startgroup=true")]]
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), SUPPORT_CHAT),
-                parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
+                parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(keyboard)
+            )
     else:
         update.effective_message.reply_text("Yo, whadup?")
 
