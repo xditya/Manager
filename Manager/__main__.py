@@ -20,7 +20,7 @@ from Manager.modules.helper_funcs.chat_status import is_user_admin
 from Manager.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-text = "Hey there {}, My name is Ironman - I'm here to help you manage your groups!\n\
+Hey there {}, My name is Ironman - I'm here to help you manage your groups!\n\
 Click Help button to find out more about how to use me.\n\n"
 
 Join SUPPORT GROUP IF YOU NEED ANY HELP\n\n\
