@@ -24,7 +24,7 @@ Hello {}, my name is {}!
 
 You know how hard it is sometimes to manage group so here is the solution for you.
 
-My owner is [Aditya 🇮🇳](t.me/xditya)
+My owner is [Mukesh Solanki 🇮🇳](t.me/mkspali)
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 """
